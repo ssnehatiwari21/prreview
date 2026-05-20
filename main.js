@@ -6,7 +6,7 @@ function calculateTotal(items) {
     }
 
     if (total > 100)
-        console.log("Discount applied"
+        console.log("Disnt applied"
 
     return total
 }
