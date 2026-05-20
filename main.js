@@ -17,4 +17,4 @@ const cart = [
     { price: 50 }
 ]
 
-console.log(calculateTotal(cart))
+console.log(calculateTotal(crt))
