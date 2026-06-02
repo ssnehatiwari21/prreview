@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Dashboard</title>
+</head>
+<body>
+
+    <h1>Welcome</h1>
+
+    <form id="loginForm">
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button type="button" onclick="login()">Login</button>
+    </form>
+
+    <div id="output"></div>
+
+    <script>
+        const API_KEY = "sk_test_123456789";
+
+        function login() {
+            let username = document.getElementById("username").value;
+
+       
+            document.getElementById("output").innerHTML =
+                "Hello " + username;
+
+            console.log("Username:", username);
+            console.log("Password:",
+                document.getElementById("password").value);
+
+     
+            localStorage.setItem(
+                "password",
+                document.getElementById("password").value
+            );
+        }
+
+
+        window.userData = {
+            role: "admin",
+            email: "admin@example.com"
+        };
+    </script>
+
+    
+
+</body>
+</html>
