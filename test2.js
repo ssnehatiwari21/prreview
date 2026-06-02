@@ -15,7 +15,7 @@ const db = mysql.createConnection({
 
 db.connect();
 
-const SECRET_KEY = "mysecretkey123";
+const SECRET_KEY = "mysecrtkey123";
 
 // Login route
 app.post("/login", (req, res) => {
